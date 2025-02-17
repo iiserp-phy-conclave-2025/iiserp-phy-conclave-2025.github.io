@@ -38,3 +38,32 @@ window.addEventListener("scroll", function () {
     footer.style.display = "none";
   }
 });
+
+//Visitor counter
+document.addEventListener("DOMContentLoaded", function () {
+  let counterElement = document.getElementById("visitor-counter");
+
+  // Do not count visits if running locally
+  if (window.location.hostname === "localhost" || window.location.protocol === "file:") {
+    console.log("Editing mode detected, visitor count not updated.");
+    return;
+  }
+
+  if (counterElement) {
+    let visits = JSON.parse(localStorage.getItem("visitHistory")) || [];
+    let today = new Date().toDateString();
+
+    // Check if the user has already visited today
+    if (!visits.includes(today)) {
+      visits.push(today);
+      localStorage.setItem("visitHistory", JSON.stringify(visits));
+    }
+
+    // Update counter in the footer
+    counterElement.textContent = `Visitors: ${visits.length}`;
+  }
+});
+
+//Testing js:
+console.log("scripts.js loaded!");
+console.log(localStorage.getItem("visitHistory"));
