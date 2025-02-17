@@ -24,7 +24,11 @@
 
     <!-- Main Content -->
     <div class="container mt-4">
-      <img src="/images/cover.png" alt="Cover Image" style="width: 100%; height: auto" />
+      <picture>
+        <source media="(max-width: 768px)" srcset="/images/cover-mobile.png" />
+        <img src="/images/cover.png" alt="Cover Image" style="width: 100%; height: auto" />
+      </picture>
+
       <div class="row">
         <!-- Left Column for Links -->
         <section class="col-md-3 links-section">
@@ -51,7 +55,6 @@
 
         <!-- Right Column for Talks Schedule -->
         <section class="col-md-9 content-section">
-          <h2>Description</h2>
           <p>
             The Physics Conclave at IISER Pune is designed to foster meaningful dialogue within the physics community, highlight cutting-edge research, and
             inspire collaborative efforts. The theme of the event for 2025 is
