@@ -40,29 +40,17 @@ window.addEventListener("scroll", function () {
 });
 
 //Visitor counter
-document.addEventListener("DOMContentLoaded", function () {
-  let counterElement = document.getElementById("visitor-counter");
+// Check if the user has visited before
+if (!localStorage.getItem("hasVisited")) {
+  // If not, increment the counter
+  let visitorCount = parseInt(localStorage.getItem("visitorCount") || "0");
+  visitorCount++;
+  localStorage.setItem("visitorCount", visitorCount);
+  localStorage.setItem("hasVisited", "true");
+}
 
-  // Do not count visits if running locally
-  if (window.location.hostname === "localhost" || window.location.protocol === "file:") {
-    console.log("Editing mode detected, visitor count not updated.");
-    return;
-  }
-
-  if (counterElement) {
-    let visits = JSON.parse(localStorage.getItem("visitHistory")) || [];
-    let today = new Date().toDateString();
-
-    // Check if the user has already visited today
-    if (!visits.includes(today)) {
-      visits.push(today);
-      localStorage.setItem("visitHistory", JSON.stringify(visits));
-    }
-
-    // Update counter in the footer
-    counterElement.textContent = `Visitors: ${visits.length}`;
-  }
-});
+// Display the visitor count
+document.getElementById("visitor-counter").textContent = localStorage.getItem("visitorCount") || "--";
 
 //Testing js:
 console.log("scripts.js loaded!");

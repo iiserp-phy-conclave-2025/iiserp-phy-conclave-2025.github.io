@@ -13,6 +13,17 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lora:wght@400;600&family=Nunito:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0G6MKDG99T"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-0G6MKDG99T"); // tracking ID
+    </script>
   </head>
   <body>
     <!-- Header >
@@ -230,7 +241,7 @@
     </div>
 
     <footer id="custom-footer" class="text-end bg-light px-3">
-      <p class="mb-0">Powered by Bootstrap | <span id="visitor-counter">Visitors: --</span></p>
+      <p class="mb-0">Powered by Bootstrap | Visitors: <span id="visitor-counter">--</span></p>
     </footer>
 
     <!-- Custom Script -->
