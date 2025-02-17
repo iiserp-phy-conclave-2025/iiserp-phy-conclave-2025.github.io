@@ -1,0 +1,215 @@
+/* Global Styles */
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9em;
+}
+
+/* Header Styles */
+.header {
+  background-color: red;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Main Content Styles */
+.links-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.links-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.links-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links-section ul li {
+  margin-bottom: 10px;
+}
+
+.links-section ul li a {
+  text-decoration: none;
+  color: red;
+}
+
+.links-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.content-section {
+  padding: 20px;
+  padding-bottom: 10%;
+}
+
+.content-section h2 {
+  font-size: 2em;
+  margin-bottom: 2%;
+  margin-top: 0%;
+}
+
+.content-section h3 {
+  font-size: 1.5em;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+h4 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Table Styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* Ensures columns have a fixed width */
+  overflow: hidden; /* Ensures border-radius applies properly */
+}
+
+.table th,
+.table td {
+  font-family: inherit;
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 200, 200);
+}
+
+.table td {
+  color: black;
+  white-space: nowrap; /* Prevent text from wrapping within cells */
+  overflow: hidden; /* Ensures that text does not overflow */
+  text-overflow: ellipsis; /* Adds an ellipsis when text overflows */
+}
+
+/* Description Row */
+.description-row {
+  display: none; /* Hidden by default */
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 0.9rem;
+  height: 0; /* Ensures no extra space is added initially */
+  overflow: hidden; /* Prevents overflow when description is hidden */
+  transition: height 0.3s ease; /* Smooth transition for height */
+  word-wrap: break-word; /* Allow text to wrap to the next line when needed */
+  white-space: normal; /* Ensure text wraps within the cell */
+}
+
+/* Ensure that descriptions do not affect table layout */
+.table td {
+  word-wrap: break-word; /* Allow text to wrap within the cell */
+  white-space: normal; /* Allow normal text wrapping */
+}
+
+tr {
+  cursor: pointer;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+td {
+  padding: 10px;
+}
+
+/* First Column (Time) */
+.table th:nth-child(1),
+.table td:nth-child(1) {
+  width: 15%; /* Adjust to desired percentage or fixed width */
+}
+
+/* Highlighted Row (for Lunch Break) */
+.highlight-red {
+  background-color: #ffd5d5; /* Light red color for lunch break */
+}
+
+.highlight-red:hover {
+  background-color: #ffaaaa; /* Darker red on hover */
+}
+
+.highlight-yellow {
+  background-color: #fff9d5; /* Light red color for lunch break */
+}
+
+.highlight-yellow:hover {
+  background-color: #ffefaa; /* Darker red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .links-section,
+  .content-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .table th,
+  .table td {
+    font-size: 0.9rem;
+  }
+
+  .table th:nth-child(1),
+  .table td:nth-child(1) {
+    width: 25%; /* Mobile: Increase width to 25% for better readability */
+  }
+}
+
+.back-to-top {
+  position: relative;
+  display: block;
+  margin-left: auto; /* Aligns to the right */
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 20px; /* Rounded edges */
+  cursor: pointer;
+  font-size: 0.8em;
+  transition: background 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: darkred;
+}
+
+#custom-footer {
+  display: none; /* Hidden initially */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  border-top: 1px solid #ddd;
+  padding: 5px 10px; /* Minimal height */
+  font-size: 0.9rem; /* Slightly smaller text */
+}
