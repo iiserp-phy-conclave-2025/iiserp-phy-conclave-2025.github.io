@@ -51,7 +51,3 @@ if (!localStorage.getItem("hasVisited")) {
 
 // Display the visitor count
 document.getElementById("visitor-counter").textContent = localStorage.getItem("visitorCount") || "--";
-
-//Testing js:
-console.log("scripts.js loaded!");
-console.log(localStorage.getItem("visitHistory"));

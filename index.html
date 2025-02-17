@@ -241,8 +241,22 @@
     </div>
 
     <footer id="custom-footer" class="text-end bg-light px-3">
-      <p class="mb-0">Powered by Bootstrap | Visitors: <span id="visitor-counter">--</span></p>
+      <p class="mb-0">Powered by Bootstrap | Last edited on <span id="last-edited-date"></span></p>
     </footer>
+
+    <!--Dynamically change the date in the footer-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const lastEditedElement = document.getElementById("last-edited-date");
+        const currentDate = new Date();
+        const formattedDate = currentDate.toLocaleDateString("en-US", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        });
+        lastEditedElement.textContent = formattedDate;
+      });
+    </script>
 
     <!-- Custom Script -->
     <script src="script.js"></script>
