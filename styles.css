@@ -145,21 +145,45 @@ td {
   width: 15%; /* Adjust to desired percentage or fixed width */
 }
 
-/* Highlighted Row (for Lunch Break) */
+/* Panel Highlight */
+.panel-row {
+  background-color: #ffffff; /* Plain white for panels */
+}
+
+.panel-row:hover {
+  background-color: #f0f0f0; /* Slightly darker white on hover */
+}
+
+/* Poster Highlight */
+.poster-row {
+  background-color: #f9f9f9; /* Slightly off-white for posters */
+}
+
+.poster-row:hover {
+  background-color: #e0e0e0; /* Slightly darker off-white on hover */
+}
+
+/* Highlighted Row (for Lunch Break, Dinner, etc.) */
+.highlight-yellow {
+  background-color: #fff9d5; /* Light yellow for lunch break, etc. */
+}
+
+.highlight-yellow:hover {
+  background-color: #ffefaa; /* Darker yellow on hover */
+}
+
+/* Italicize Dinner and Other Special Events */
+.highlight-italic {
+  font-style: italic; /* Italicize for dinner and other special events */
+}
+
+/* Highlighted Row for Lunch Break */
 .highlight-red {
   background-color: #ffd5d5; /* Light red color for lunch break */
 }
 
 .highlight-red:hover {
   background-color: #ffaaaa; /* Darker red on hover */
-}
-
-.highlight-yellow {
-  background-color: #fff9d5; /* Light red color for lunch break */
-}
-
-.highlight-yellow:hover {
-  background-color: #ffefaa; /* Darker red on hover */
 }
 
 /* Responsive Design */
@@ -193,6 +217,19 @@ td {
   }
 }
 
+@media (max-width: 767px) {
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 5%;
+  }
+  #schedule,
+  #merch,
+  #contact {
+    margin-bottom: 5%;
+  }
+}
+
 .back-to-top {
   position: relative;
   display: block;
@@ -220,4 +257,95 @@ td {
   border-top: 1px solid #ddd;
   padding: 5px 10px; /* Minimal height */
   font-size: 0.9rem; /* Slightly smaller text */
+}
+
+/* Merchandise image class */
+.merchandise {
+  max-width: 100%; /* Full width of the container */
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  display: block;
+  margin: auto;
+  transform-origin: center;
+  cursor: pointer; /* Indicate clickability */
+  position: relative; /* Ensure it doesn't overlap text */
+  z-index: 1; /* Set z-index to prevent it from overlapping the text */
+}
+
+/* Hover effect only for larger screens */
+@media (min-width: 768px) {
+  .merchandise:hover {
+    transform: scale(1.1);
+  }
+}
+
+.merchandise + p {
+  margin-top: 10px; /* Space between image and the text */
+}
+
+/* Modal image styling */
+.modal-body img {
+  width: 100%; /* Full width in modal */
+  height: auto;
+}
+
+/* Center modal in the middle of the screen */
+.modal-dialog {
+  max-width: 60%;
+  margin: 0 auto; /* Center modal horizontally */
+}
+
+/* Adjust modal for smaller screens */
+@media (max-width: 576px) {
+  .modal-dialog {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+
+  .modal-body img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Ensure modal title and close button are properly spaced */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header .btn-close {
+  margin-top: 0;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between items */
+  justify-content: flex-start; /* Keep the items aligned to the left */
+}
+
+.contact-item {
+  width: calc(33.33% - 20px); /* Each item takes 1/3 of the width minus the gap */
+  margin-bottom: 20px; /* Vertical margin between rows */
+}
+
+.contact-item h4 {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.contact-item p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+/* Handle small screen sizes */
+@media (max-width: 767px) {
+  .contact-item {
+    width: 100%; /* Full width on mobile */
+  }
 }

@@ -6,6 +6,9 @@
     <title>Physics Conclave 2025</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap JS (Required for Modal functionality) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css" />
     <!-- Google Fonts -->
@@ -100,8 +103,9 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>10:00 AM</td>
+              <!-- Day 1 Panels and Poster Sessions -->
+              <tr class="panel-row">
+                <td>12:00 PM</td>
                 <td>Panel 1</td>
               </tr>
               <tr class="description-row">
@@ -112,8 +116,8 @@
                 </td>
               </tr>
 
-              <tr>
-                <td>11:00 AM</td>
+              <tr class="poster-row">
+                <td>01:00 PM</td>
                 <td>Poster 1</td>
               </tr>
               <tr class="description-row">
@@ -124,8 +128,8 @@
                 </td>
               </tr>
 
-              <tr>
-                <td>12:00 PM</td>
+              <tr class="panel-row">
+                <td>02:00 PM</td>
                 <td>Panel 2</td>
               </tr>
               <tr class="description-row">
@@ -136,13 +140,20 @@
                 </td>
               </tr>
 
-              <tr class="highlight-yellow">
-                <td>01:00 PM</td>
-                <td>Lunch Break</td>
+              <tr class="poster-row">
+                <td>03:00 PM</td>
+                <td>Poster 2</td>
+              </tr>
+              <tr class="description-row">
+                <td></td>
+                <td>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum deleniti, velit deserunt impedit nulla recusandae! Quisquam
+                  perferendis, veniam, aut fugiat quasi sapiente!
+                </td>
               </tr>
 
-              <tr>
-                <td>02:00 PM</td>
+              <tr class="panel-row">
+                <td>04:00 PM</td>
                 <td>Panel 3</td>
               </tr>
               <tr class="description-row">
@@ -152,9 +163,26 @@
                   eligendi, repudiandae quibusdam a, debitis consequatur nulla quam alias. Ullam, eligendi nobis?
                 </td>
               </tr>
+
+              <tr class="poster-row">
+                <td>05:00 PM</td>
+                <td>Poster 3</td>
+              </tr>
+              <tr class="description-row">
+                <td></td>
+                <td>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex iste molestiae inventore praesentium voluptate, neque accusamus odit eveniet
+                  eligendi, repudiandae quibusdam a, debitis consequatur nulla quam alias. Ullam, eligendi nobis?
+                </td>
+              </tr>
+
+              <tr class="highlight-yellow">
+                <td>06:00 PM</td>
+                <td>Closing Remarks</td>
+              </tr>
             </tbody>
           </table>
-          <!--End: Table 1-->
+          <!-- End: Table 1 -->
 
           <h3 style="margin-top: 5%">Friday, 7th March</h3>
           <!-- Table -->
@@ -162,12 +190,13 @@
             <thead>
               <tr>
                 <th>Time</th>
-                <th>Talk Title</th>
+                <th>Event</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>10:00 AM</td>
+              <!-- Day 2 Panels and Poster Sessions (Before Lunch) -->
+              <tr class="panel-row">
+                <td>09:30 AM</td>
                 <td>Panel 1</td>
               </tr>
               <tr class="description-row">
@@ -178,8 +207,8 @@
                 </td>
               </tr>
 
-              <tr>
-                <td>11:00 AM</td>
+              <tr class="poster-row">
+                <td>10:30 AM</td>
                 <td>Poster 1</td>
               </tr>
               <tr class="description-row">
@@ -190,8 +219,8 @@
                 </td>
               </tr>
 
-              <tr>
-                <td>12:00 PM</td>
+              <tr class="panel-row">
+                <td>11:30 AM</td>
                 <td>Panel 2</td>
               </tr>
               <tr class="description-row">
@@ -203,11 +232,12 @@
               </tr>
 
               <tr class="highlight-yellow">
-                <td>01:00 PM</td>
+                <td>12:30 PM</td>
                 <td>Lunch Break</td>
               </tr>
 
-              <tr>
+              <!-- Day 2 Panels and Poster Sessions (After Lunch) -->
+              <tr class="panel-row">
                 <td>02:00 PM</td>
                 <td>Panel 3</td>
               </tr>
@@ -218,22 +248,175 @@
                   eligendi, repudiandae quibusdam a, debitis consequatur nulla quam alias. Ullam, eligendi nobis?
                 </td>
               </tr>
+
+              <tr class="poster-row">
+                <td>03:00 PM</td>
+                <td>Poster 2</td>
+              </tr>
+              <tr class="description-row">
+                <td></td>
+                <td>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum deleniti, velit deserunt impedit nulla recusandae! Quisquam
+                  perferendis, veniam, aut fugiat quasi sapiente!
+                </td>
+              </tr>
+
+              <tr class="panel-row">
+                <td>04:00 PM</td>
+                <td>Panel 4</td>
+              </tr>
+              <tr class="description-row">
+                <td></td>
+                <td>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi deleniti nisi pariatur suscipit iusto ad fuga ab? Reprehenderit, tempora!
+                </td>
+              </tr>
+
+              <tr class="poster-row">
+                <td>05:00 PM</td>
+                <td>Poster 3</td>
+              </tr>
+              <tr class="description-row">
+                <td></td>
+                <td>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex iste molestiae inventore praesentium voluptate, neque accusamus odit eveniet
+                  eligendi, repudiandae quibusdam a, debitis consequatur nulla quam alias. Ullam, eligendi nobis?
+                </td>
+              </tr>
+
+              <tr class="highlight-yellow">
+                <td>06:30 PM</td>
+                <td>Closing Remarks</td>
+              </tr>
+
+              <!-- Dinner -->
+              <tr class="highlight-yellow">
+                <td>08:00 PM</td>
+                <td>Dinner</td>
+              </tr>
             </tbody>
           </table>
-          <!--End: Table 2-->
+          <!-- End: Table 2 -->
+
           <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
           <!--End section: Schedule-->
 
           <hr style="margin: 2% 0" />
           <h2 id="merch">Merchandise</h2>
 
-          <p><strong style="color: red">Coming soon ...</strong></p>
+          <div class="row text-center">
+            <div class="col-md-4 col-12 mb-3">
+              <img src="/images/shirt1.png" class="img-fluid merchandise" alt="Round Neck T-shirt" data-bs-toggle="modal" data-bs-target="#modalShirt1" />
+              <p>
+                <strong>Round Neck T-shirt (Black)</strong> <br />
+                <strong>Price:</strong> [to be updated]
+              </p>
+            </div>
+
+            <div class="col-md-4 col-12 mb-3">
+              <img src="/images/shirt2.png" class="img-fluid merchandise" alt="Black Polo T-shirt" data-bs-toggle="modal" data-bs-target="#modalShirt2" />
+              <p>
+                <strong>Polo T-shirt (Black)</strong> <br />
+                <strong>Price:</strong> [to be updated]
+              </p>
+            </div>
+
+            <div class="col-md-4 col-12 mb-3">
+              <img src="/images/shirt3.png" class="img-fluid merchandise" alt="Navy Blue Polo T-shirt" data-bs-toggle="modal" data-bs-target="#modalShirt3" />
+              <p>
+                <strong>Polo T-shirt (Navy Blue)</strong> <br />
+                <strong>Price:</strong> [to be updated]
+              </p>
+            </div>
+          </div>
+
+          <!-- Modal Templates -->
+          <div class="modal fade" id="modalShirt1" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Round Neck T-shirt (Black)</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                  <img src="/images/shirt1.png" class="img-fluid" alt="Round Neck T-shirt" />
+                  <p><strong>Price:</strong> [to be updated]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="modalShirt2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Polo T-shirt (Black)</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                  <img src="/images/shirt2.png" class="img-fluid" alt="Black Polo T-shirt" />
+                  <p><strong>Price:</strong> [to be updated]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="modalShirt3" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Polo T-shirt (Navy Blue)</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                  <img src="/images/shirt3.png" class="img-fluid" alt="Navy Blue Polo T-shirt" />
+                  <p><strong>Price:</strong> [to be updated]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
           <!--End section: Merchandise-->
 
           <hr style="margin: 2% 0" />
+
           <h2 id="contact">Contact</h2>
-          <p><strong style="color: red">Coming soon ...</strong></p>
+
+          <div class="contact-info">
+            <div class="contact-item">
+              <h4>Faculty in charge</h4>
+              <p>
+                <a href="https://www.iiserpune.ac.in/research/department/physics/people/faculty/regular-faculty/pavan-kumar-g-v/263" target="_blank"
+                  >Pavan Kumar G. V.</a
+                >
+                <br />
+                (pavan@iiserpune.ac.in)
+              </p>
+            </div>
+
+            <div class="contact-item">
+              <h4>Merchandise</h4>
+              <p>Avinash Mahapatra</p>
+              <p>Joel Sunil</p>
+            </div>
+
+            <div class="contact-item">
+              <h4>Social Media and website</h4>
+              <p>Prachurjya Hazarika</p>
+            </div>
+
+            <div class="contact-item">
+              <h4>Posters</h4>
+              <p>Pankaj Gupta</p>
+            </div>
+
+            <div class="contact-item">
+              <h4>Food</h4>
+              <p>Kumar Yash</p>
+            </div>
+          </div>
+
           <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
           <!--End section: Contact-->
         </section>
@@ -241,22 +424,8 @@
     </div>
 
     <footer id="custom-footer" class="text-end bg-light px-3">
-      <p class="mb-0">Powered by Bootstrap | Last edited on <span id="last-edited-date"></span></p>
+      <p class="mb-0">Powered by Bootstrap | Last edited on 26/02/2025</p>
     </footer>
-
-    <!--Dynamically change the date in the footer-->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const lastEditedElement = document.getElementById("last-edited-date");
-        const currentDate = new Date();
-        const formattedDate = currentDate.toLocaleDateString("en-US", {
-          year: "numeric",
-          month: "long",
-          day: "numeric",
-        });
-        lastEditedElement.textContent = formattedDate;
-      });
-    </script>
 
     <!-- Custom Script -->
     <script src="script.js"></script>
