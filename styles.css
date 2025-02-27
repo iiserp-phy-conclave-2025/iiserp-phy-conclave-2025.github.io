@@ -196,7 +196,7 @@ td {
   }
   .table th:nth-child(1),
   .table td:nth-child(1) {
-    width: 38%;
+    width: 45%;
   }
 }
 
