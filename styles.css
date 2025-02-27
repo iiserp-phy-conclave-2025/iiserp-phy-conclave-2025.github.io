@@ -103,38 +103,36 @@ h4 {
 
 .table td {
   color: black;
-  white-space: nowrap; /* Prevent text from wrapping within cells */
-  overflow: hidden; /* Ensures that text does not overflow */
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis; /* Adds an ellipsis when text overflows */
 }
 
 /* Description Row */
 .description-row {
-  display: none; /* Hidden by default */
-  background-color: #f1f1f1;
+  display: none;
+  background-color: #ffffff;
   color: black;
   font-size: 0.9rem;
-  height: 0; /* Ensures no extra space is added initially */
-  overflow: hidden; /* Prevents overflow when description is hidden */
+  height: 0;
+  overflow: hidden;
   transition: height 0.3s ease; /* Smooth transition for height */
-  word-wrap: break-word; /* Allow text to wrap to the next line when needed */
-  white-space: normal; /* Ensure text wraps within the cell */
+  word-wrap: break-word;
+  white-space: normal;
 }
 
 /* Ensure that descriptions do not affect table layout */
 .table td {
-  word-wrap: break-word; /* Allow text to wrap within the cell */
-  white-space: normal; /* Allow normal text wrapping */
+  word-wrap: break-word;
+  white-space: normal;
 }
-
 tr {
   cursor: pointer;
+  background-color: #ffffff;
 }
-
 tr:hover {
-  background-color: #f9f9f9;
+  background-color: #ffffff;
 }
-
 td {
   padding: 10px;
 }
@@ -142,48 +140,37 @@ td {
 /* First Column (Time) */
 .table th:nth-child(1),
 .table td:nth-child(1) {
-  width: 15%; /* Adjust to desired percentage or fixed width */
+  width: 20%; /* Adjust to desired percentage or fixed width */
 }
 
 /* Panel Highlight */
 .panel-row {
-  background-color: #ffffff; /* Plain white for panels */
+  background-color: #ffffff;
 }
-
 .panel-row:hover {
-  background-color: #f0f0f0; /* Slightly darker white on hover */
+  background-color: #ffffff;
 }
-
-/* Poster Highlight */
 .poster-row {
-  background-color: #f9f9f9; /* Slightly off-white for posters */
+  color: #333;
+  background-color: #f5f5f5;
 }
-
 .poster-row:hover {
-  background-color: #e0e0e0; /* Slightly darker off-white on hover */
+  background-color: #f5f5f5;
 }
-
-/* Highlighted Row (for Lunch Break, Dinner, etc.) */
 .highlight-yellow {
-  background-color: #fff9d5; /* Light yellow for lunch break, etc. */
+  background-color: #ffefaa;
 }
-
 .highlight-yellow:hover {
-  background-color: #ffefaa; /* Darker yellow on hover */
+  background-color: #ffefaa;
 }
-
-/* Italicize Dinner and Other Special Events */
 .highlight-italic {
-  font-style: italic; /* Italicize for dinner and other special events */
+  font-style: italic;
 }
-
-/* Highlighted Row for Lunch Break */
 .highlight-red {
-  background-color: #ffd5d5; /* Light red color for lunch break */
+  background-color: #ffd5d5;
 }
-
 .highlight-red:hover {
-  background-color: #ffaaaa; /* Darker red on hover */
+  background-color: #ffaaaa;
 }
 
 /* Responsive Design */
@@ -194,30 +181,26 @@ td {
     margin-bottom: 20px;
     font-size: 0.9em;
   }
-
   .header h1 {
     font-size: 2rem;
   }
-
   .content-section h2 {
     font-size: 1.4em;
   }
   .content-section h3 {
     font-size: 1.2em;
   }
-
   .table th,
   .table td {
     font-size: 0.9rem;
   }
-
   .table th:nth-child(1),
   .table td:nth-child(1) {
-    width: 25%; /* Mobile: Increase width to 25% for better readability */
+    width: 38%;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   h2,
   h3,
   h4 {
@@ -243,7 +226,6 @@ td {
   font-size: 0.8em;
   transition: background 0.3s ease;
 }
-
 .back-to-top:hover {
   background-color: darkred;
 }
@@ -271,81 +253,64 @@ td {
   position: relative; /* Ensure it doesn't overlap text */
   z-index: 1; /* Set z-index to prevent it from overlapping the text */
 }
-
-/* Hover effect only for larger screens */
 @media (min-width: 768px) {
   .merchandise:hover {
     transform: scale(1.1);
   }
 }
-
 .merchandise + p {
   margin-top: 10px; /* Space between image and the text */
 }
-
-/* Modal image styling */
 .modal-body img {
   width: 100%; /* Full width in modal */
   height: auto;
 }
-
-/* Center modal in the middle of the screen */
 .modal-dialog {
   max-width: 60%;
   margin: 0 auto; /* Center modal horizontally */
 }
-
-/* Adjust modal for smaller screens */
 @media (max-width: 576px) {
   .modal-dialog {
     max-width: 100%;
     margin-top: 10px;
   }
-
   .modal-body img {
     max-width: 100%;
     height: auto;
   }
 }
-
-/* Ensure modal title and close button are properly spaced */
 .modal-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .modal-header .btn-close {
   margin-top: 0;
 }
 
+/*contacts*/
 .contact-info {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Space between items */
-  justify-content: flex-start; /* Keep the items aligned to the left */
+  gap: 20px;
+  justify-content: flex-start;
 }
-
 .contact-item {
-  width: calc(33.33% - 20px); /* Each item takes 1/3 of the width minus the gap */
-  margin-bottom: 20px; /* Vertical margin between rows */
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
 }
-
 .contact-item h4 {
   margin-bottom: 5px;
   font-size: 16px;
   color: #333;
 }
-
 .contact-item p {
   font-size: 14px;
   color: #555;
   margin: 0;
 }
-
-/* Handle small screen sizes */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .contact-item {
-    width: 100%; /* Full width on mobile */
+    width: 100%;
   }
 }
